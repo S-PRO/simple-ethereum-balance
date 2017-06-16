@@ -5,12 +5,14 @@ block content
   div(id="wallet-form")
     form(name="wallet")
       div
-        label(for="wallet") Enter wallet address
+        label(for="wallet") Address
       div
         input(
-          name="wallet-address"
-          type="text"
-          placeholder="738d145faabb1e00cf5a017588a9c0f998318012"
+          name="wallet-address",
+          type="text",
+          placeholder="738d145faabb1e00cf5a017588a9c0f998318012",
+          required="required",
+          pattern="[A-Za-z0-9]{20,50}"
         )
       div
         input(type="submit")
