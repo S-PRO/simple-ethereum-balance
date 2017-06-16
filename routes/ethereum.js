@@ -34,7 +34,6 @@ const getBalance = async((req, res, next) => {
 })
 
 /* GET balance. */
-router.get('/balance', getBalance);
 router.get('/balance/:id', getBalance);
 
 module.exports = router;
