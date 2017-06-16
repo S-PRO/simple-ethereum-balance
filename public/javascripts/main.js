@@ -10,6 +10,9 @@ if (form && walletId) {
       .then(response => {
         outBalance.innerText = response.data.balance;
       })
+      .catch(error => {
+        outBalance.innerText = "Error. Try again later";
+      })
   });
 } else {
   console.warn("some error")
