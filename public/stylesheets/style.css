@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+#wallet-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#wallet-form>form>div {
+  margin: 3px 0;
+  border: 0;
+}
+
+#wallet-form>form>div:first-child {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+input[name="wallet"] {
+  box-sizing: border-box;
+  text-align: right;
+  padding: 0 2px;
+}

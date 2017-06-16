@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  div(id="wallet-form")
+    form(name="wallet")
+      div
+        label(for="wallet") Enter wallet address
+      div
+        input(
+          name="wallet"
+          type="text"
+          placeholder="738d145faabb1e00cf5a017588a9c0f998318012"
+        )
+      div
+        input(type="submit")
