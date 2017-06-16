@@ -6,9 +6,10 @@ const outBalance = document.getElementById('balance-value');
 if (form && walletId) {
   form.addEventListener('submit', (evt) => {
     evt.preventDefault();
+
     axios.get(`${balanceUrl}/${walletId.value}`)
       .then(response => {
-        outBalance.innerText = response.data.balance;
+        outBalance.innerText = `Your balance is ${response.data.balance} Eth`;
       })
       .catch(error => {
         outBalance.innerText = "Error. Try again later";
